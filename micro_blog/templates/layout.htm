@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column text-center">
+        <div class="hero hero-sm bg-gray">
+          <div class="hero-body">
+            <h2>Evermore</h2>
+            <p>Development? It's Easy If You Do It Smart</p>
+            <p class="text-gray">
+              <a href="/">Home</a>
+              |
+              <a href="/about">About</a>
+              |
+              <a href="/contact">Contact</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container grid-md" style="padding-top: 2em; padding-bottom: 2em;">
+      {% block content %}
+
+      {% endblock content %}
+    </div>
+  </div>
+</body>
+
+</html>

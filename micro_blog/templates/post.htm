@@ -1,0 +1,13 @@
+{% extends "layout.htm" %}
+
+{% block content %}
+<div class="columns">
+    <div class="column">
+        <h3>{{ post.headline }}</h3>
+
+        <pre style="white-space: pre-wrap">
+            {{ post.text | safe }}
+        </pre>
+    </div>
+</div>
+{% endblock content %}

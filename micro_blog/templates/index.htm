@@ -1,0 +1,16 @@
+{% extends "layout.htm" %}
+
+{% block content %}
+<h3 class="text-center text-gray text-normal">ALL POSTS</h3>
+<div class="divider" style="margin-bottom: 2em; margin-top: 2em;"></div>
+
+{% for post in posts %}
+<div class="columns">
+  <div class="column">
+    <h5><a href="/posts/{{ post.id }}">{{ post.headline }}</a></h5>
+    <span class="text-gray" style="font-size: smaller;">{{ post.created_at }}</span>
+    <p>{{ post.text | safe | truncate(100) }}</p>
+  </div>
+</div>
+{% endfor %}
+{% endblock content %}
